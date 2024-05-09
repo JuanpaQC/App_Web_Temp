@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperaturas</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <h1>Temperaturas</h1>
+  <div class="date-container">
+    <label for="date">Selecciona una fecha:</label>
+    <input type="date" id="date">
+    <label for="horaInicio">Hora de inicio:</label>
+    <input type="time" id="horaInicio">
+    <label for="horaFin">Hora de fin:</label>
+    <input type="time" id="horaFin">
+  </div>
+  <div class="date-containerbtn">
+    <button id="mostrarTemperaturasBtn">Mostrar Temperaturas</button>
+  </div>
+  <div id="temperaturas-container">
+    <canvas id="graficoTemperaturas"></canvas>
+  </div>
+  <div id="temperaturaMaxima"></div>
+  <div id="temperaturaMinima"></div>
+  <div id="temperaturaPromedio"></div>
+
+  <a href="consulta_2.html">consulta 2</a>
+  <a href="index.html">consulta 1</a>
+
+  <!-- Incluir el SDK de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+  <!-- Incluir Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Configuración de Firebase -->
+  <script src="firebase-config.js"></script>
+  <!-- Lógica de la aplicación -->
+  <script src="consulta3.js"></script>
+</body>
+</html>

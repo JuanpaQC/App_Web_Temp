@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="laptop.png" type="image/png">
+    <script>
+        function redirectToIndex() {
+            window.location.href = "index.html"; 
+        }
+    </script>
+</head>
+<body>
+
+<div class="login-container">
+    <form class="login-form" onsubmit="redirectToIndex(); return false;">
+        <h2>Inicio de sesión</h2>
+        <div class="input-group"> 
+            <input type="text" id="username" name="username" placeholder="Nombre" required>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+        </div>
+        <div class="input-group">
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <button type="submit">Ingresar</button>
+    </form>
+</div>
+</body>
+</html>
